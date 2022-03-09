@@ -1,0 +1,221 @@
+.header {  
+    &__mobile {
+        display: none;
+        &__logo-link {
+            display: none;
+            
+        }
+        
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 12px;
+    }
+    
+    &__right {
+        display: flex;
+        margin-left: 130px;
+    }
+    
+    &__tel {
+        margin-right: 58px;
+        margin-left: 335px;
+        
+        &-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+        }
+        
+        &-img {
+            width: 28px;
+            height: 28px;
+            margin-right: 22px;
+        }
+        
+        &-number {
+            min-width: 110px;
+            margin-right: 58px;
+        }
+    }
+    
+    &__socials {
+        display: flex;
+        margin-top: 10px;
+        
+        &-link {
+            text-decoration: none;
+        }
+        
+    }
+    
+    &__socials-fb {
+        margin-right: 10px;
+    }
+    
+    &__socials-insta {
+        margin-right: 66px;
+    }
+    
+    &__count {
+        display: flex;
+        align-self: center;
+    }
+    
+    &__select {
+        color: #55A630;
+        margin-right: 10px;
+        margin-top: 7px;
+        border: none;
+    }
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin-top: 23px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    &__item {
+        margin: 0;
+        padding: 0;
+        &-link {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            color: #424242;
+            text-decoration: none;
+            min-width: 30px;
+        }
+        
+    }
+    &__button {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        margin: 0;
+        
+        &__logo-link {
+            display: none;
+        }
+        
+        &__mobile {
+            
+            &__logo-link {
+                display: inline-block;
+                margin-right: 35px;
+            }
+        }
+        
+        &__button {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            display: inline-block;
+            margin-right: 390px;
+        }
+        
+        &__list {
+            display: none;
+        }
+        
+        &__socials {
+            display: none;
+        }
+        
+        &__count {
+            display: none;
+        }
+        
+        &__tel {
+            margin: 0;
+            padding: 0;
+            margin-left: 235px;
+            &-number {
+                min-width: 120px;
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        
+        &__button {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            display: inline-block;
+            margin-right: 450px;
+        }
+        
+        &__tel {
+            margin: 0;
+            padding: 0;
+            margin-left: 155px;
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .header {
+        &__mobile {
+            
+            &__logo-link {
+                max-width: 45px;
+                height: 46px;
+                display: inline-block;
+                margin-left: 10px;
+                margin-right: 128px;
+            }
+        }  
+        
+        
+        &__button {
+            width: 29px;
+            height: 14px;
+            padding: 0;
+            margin: 0;
+            margin-right: 272px;
+            margin-left: 130px;
+            border: none;
+            background-color: transparent;
+            display: inline-block;
+        }
+        
+        &__tel {
+            margin: 0;
+            padding: 0;
+            
+            
+            &-img {
+                max-width: 14px;
+                height: 14px;
+            }
+            
+            &-number {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    display: flex;
+}
