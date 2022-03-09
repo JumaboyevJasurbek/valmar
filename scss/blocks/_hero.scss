@@ -10,6 +10,7 @@
     &__text {
         min-width: 561px;
         margin-top: 202px;
+        margin-right: 26px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
@@ -30,8 +31,8 @@
         
         
         &__text {
-            max-width: 470px;
-            margin-right: 150px;
+            width: 470px;
+            margin-right: 40px;
             font-weight: 600;
             font-size: 32px;
             line-height: 46px
@@ -49,26 +50,22 @@
     .hero {
         display: flex;
         justify-content: space-between;
+        margin-top: 12px;
         
         &__section {
-            margin: 0;
-            padding: 0;
-            width: 310px;
+            display: flex;
+            justify-content: space-between;
         }
 
         &__text {
-            font-family: 'Montserrat';
             font-style: normal;
             font-size: 25px;
-            line-height: 36px;
-            margin-top: 160px;
-            padding-left: 200px;
+            line-height: 46px;
+            padding-right: 200px;
         }
-        
+
         &__img {
-            margin-left: 100px;
-            width: 311px;
-            height: 294px;
+            margin-right: 0;
         }
     }
 }
@@ -78,30 +75,48 @@
         display: flex;
         &__section {
             padding: 0;
-            margin: 0 auto;
             display: inline-block;
             text-align: center;
-            margin-left: 450px;
+            margin: 0 auto;
+            margin-left: 230px;
         }
 
         &__text {
             padding: 0;
-            margin: 0 auto;
-            max-width: 99px;
+            margin: 0;
+            margin-top: 100px;
+            min-width: 20px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 600;
-            font-size: 45px;
-            line-height: 38px;
-            margin-top: 100px;
+            font-size: 20px;
+            line-height: 28px;
             text-align: center;
         }
         
         &__img {
-            margin: 0;
-            margin-top: 40px;
-            width: 500px;
-            height: 222px;
+            margin: 0 ;
+            margin-top: 35px;
+            height: 322px;
         }
     }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        
+        &__section {
+            padding-left: 100px;
+            margin: 0 auto;
+            // margin-left: 123px;
+        }
+        &__text {
+
+        }
+
+        &__img {
+            width: 480px;
+        }
+    }
+
 }

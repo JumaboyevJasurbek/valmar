@@ -104,6 +104,8 @@
 @media only screen and (max-width: 1000px) {
     .header {
         margin: 0;
+        display: flex;
+        justify-content: space-between;
         
         &__logo-link {
             display: none;
@@ -164,7 +166,7 @@
         &__tel {
             margin: 0;
             padding: 0;
-            margin-left: 155px;
+            margin-left: 165px;
         }
         
     }
@@ -216,6 +218,23 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
-    display: flex;
+@media only screen and (max-width: 320px) {
+    .header {
+        padding: 0;
+        &__mobile {
+            &__logo-img {
+                margin-left: 270px;
+            }
+        }
+
+        &__wrapper {
+        }
+        &__tel {
+            display: none;
+        }
+
+        &__button {
+            margin-left: 20px;
+        }
+    }
 }

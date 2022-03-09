@@ -47,54 +47,56 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Курсы обучения
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Вебинары
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Видео-уроки
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Блог
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            О нас
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Прайс
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Рассписание
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Акции
-          </a>
-        </li>
-        <li class="header__item">
-          <a class="header__item-link" href="./index.html">
-            Магазин
-          </a>
-        </li>
-      </ul>
+    <div class="nav">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Курсы обучения
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Вебинары
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Видео-уроки
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Блог
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              О нас
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Прайс
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Рассписание
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Акции
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__item-link" href="./index.html">
+              Магазин
+            </a>
+          </li>
+        </ul>
+      </div><!--end of container-->
     </div>
     <!-- <div class="header__mobile">
       <div class="container">
@@ -112,17 +114,27 @@
     </div> -->
   </header>
   
-  <!-- <div class="container">
-    <div class="hero">
+  <div class="hero">
+  <div class="container">
       <div class="hero__section">
         <h2 class="hero__text">
           Учебный центр эстетической косметологии VAlmari
         </h2>
-        <img class="hero__img" src="./images/hero-img.png" width="569" height="452" alt="imgages">
-        
+        <picture>
+          <source media="(min-width: 1400px)" srcset="./images/hero-img.png">
+          <source media="(max-width: 1000px)" srcset="./images/hero-img1000.png">
+          <source media="(max-width: 768px)" srcset="./images/hero-img768.png">
+          <source media="(max-width: 480px)" srcset="./images/hero-img480.png">
+          <source media="(max-width: 320px)" srcset="./images/hero-img320.png">
+          <img class="hero__img" src="./images/hero-img.png" alt="img">
+          <!-- <img src="./images/hero-img1000.png" alt="img">
+          <img src="./images/hero-img768.png" alt="img">
+          <img src="./images/hero-img480.png" alt="img">
+          <img src="./images/hero-img320.png" alt="img"> -->
+        </picture>
       </div>
     </div>
-  </div> -->
+  </div>
   
   
 </body>
