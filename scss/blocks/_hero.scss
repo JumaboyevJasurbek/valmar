@@ -3,11 +3,10 @@
     padding: 0;
     &__section {
         display: flex;
-        justify-content: space-between;
         padding-right: 200px;
     }
     
-    &__text {
+    &__heading {
         min-width: 561px;
         margin-top: 202px;
         margin-right: 26px;
@@ -22,15 +21,33 @@
     
     &__img {
         margin-top: 56px;
+        margin-right: 20px;
+    }
+    
+    &__bottom-section {
+        margin: 75px auto;
+        width: 1036px;
+        padding: 59px 14px 60px 25px;
+        background: #FFFFFF;
+        box-shadow: 10px 10px 10px rgba(207, 207, 207, 0.25);
+    }
+    
+    &__text {
+        width: 997px;
+        margin: 0 auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 21px;
+        color: #424242;
+        opacity: 0.8;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .hero {
-        
-        
-        
-        &__text {
+        &__heading {
             width: 470px;
             margin-right: 40px;
             font-weight: 600;
@@ -42,6 +59,15 @@
             width: 471px;
             height: 433px;
         }
+        
+        &__section {
+            margin: 50px auto;
+            padding: 37px 37px 38px 51px;
+        }
+        
+        &__text {
+            width: 750px;
+        }
     }
 }
 
@@ -49,23 +75,34 @@
 @media only screen and (max-width: 768px) {
     .hero {
         display: flex;
-        justify-content: space-between;
         margin-top: 12px;
         
         &__section {
             display: flex;
             justify-content: space-between;
         }
-
-        &__text {
+        
+        &__heading {
             font-style: normal;
             font-size: 25px;
             line-height: 46px;
-            padding-right: 200px;
+            padding-left: 100px;
+            padding-right: 50px;
         }
-
+        
         &__img {
-            margin-right: 0;
+            margin-right: 50px;
+        }
+        
+        &__bottom-section {
+            max-width: 572px;
+            padding: 32px 31px 32px 26px;
+        }
+        
+        &__text {
+            max-width: 515px;
+            font-size: 15px;
+            line-height: 21px;
         }
     }
 }
@@ -78,13 +115,14 @@
             display: inline-block;
             text-align: center;
             margin: 0 auto;
-            margin-left: 230px;
         }
-
-        &__text {
+        
+        &__heading {
             padding: 0;
             margin: 0;
             margin-top: 100px;
+            margin: 50px auto;
+            margin-right: 40px;
             min-width: 20px;
             font-family: 'Montserrat';
             font-style: normal;
@@ -95,28 +133,57 @@
         }
         
         &__img {
-            margin: 0 ;
             margin-top: 35px;
+            max-width: 480px;
             height: 322px;
+        }
+
+        &__bottom-section {
+            max-width: 360px;
+            margin: 40px auto;
+            padding: 22px 19px 22px 20px;
+            margin-left: 300px;
+        }
+
+        &__text {
+            max-width: 321px;
+            font-size: 15px;
+            line-height: 22px;
         }
     }
 }
 
 @media only screen and (max-width: 320px) {
     .hero {
-        
         &__section {
-            padding-left: 100px;
             margin: 0 auto;
-            // margin-left: 123px;
+            margin-left: 100px;
         }
-        &__text {
-
+        &__heading {
+            margin: 100px auto;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 25px;
         }
-
+        
         &__img {
+            margin: 0 auto;
             width: 480px;
         }
-    }
+        
+        &__bottom-section {
+            margin: 40px auto;
+            max-width: 295px;
+            padding: 22px 1px 23px 2px;
+            margin-left: 200px;
+        }
 
+        &__text {
+            max-width: 295px;
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    
 }

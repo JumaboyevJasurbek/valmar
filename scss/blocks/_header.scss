@@ -105,17 +105,20 @@
     .header {
         margin: 0;
         display: flex;
-        justify-content: space-between;
-        
         &__logo-link {
             display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            text-align: center;
         }
         
         &__mobile {
             
             &__logo-link {
-                display: inline-block;
-                margin-right: 35px;
+                display: flex;
+                margin-left: 290px;
             }
         }
         
@@ -124,7 +127,7 @@
             border: none;
             background-color: transparent;
             display: inline-block;
-            margin-right: 390px;
+            margin-right: 200px;
         }
         
         &__list {
@@ -140,11 +143,14 @@
         }
         
         &__tel {
+            display: inline-block;
             margin: 0;
             padding: 0;
-            margin-left: 235px;
+            margin-left: 135px;
             &-number {
+                padding: 0;
                 min-width: 120px;
+                margin-right: -10px;
             }
         }
         
@@ -227,8 +233,6 @@
             }
         }
 
-        &__wrapper {
-        }
         &__tel {
             display: none;
         }
