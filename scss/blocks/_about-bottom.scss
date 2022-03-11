@@ -1,4 +1,5 @@
 .about-bottom {
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     
@@ -43,6 +44,7 @@
     }
     
     &__item--nd {
+        height: 291px;
         margin: 0;
         padding: 0;
         margin-right: 31px;
@@ -169,6 +171,7 @@
             padding: 15px 0 0 221px;
             margin: 0;
             margin-bottom: 32px;
+            padding-bottom: 8px;
             &__heading {
                 @include about-bottom__heading768;
             }
