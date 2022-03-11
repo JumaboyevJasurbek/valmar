@@ -1,0 +1,72 @@
+@mixin about-bottom__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    color: #424242;
+}
+
+@mixin about-bottom__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1C1E23;
+    opacity: 0.8;
+}
+
+@mixin about-bottom__heading1000 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+@mixin about-bottom__text1000 {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+@mixin about-bottom__heading768 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin about-bottom__text768 {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+
+@mixin about-bottom__heading480 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin about-bottom__text480 {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+@mixin about-bottom__width480 {
+    width: 355px;
+    max-height: 220px;
+}
+
+
+
+
+@mixin about-bottom__heading320 {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+@mixin about-bottom__text320 {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+@mixin about-bottom__width320 {
+    width: 300px;
+    max-height: 235px;
+}

@@ -1,0 +1,345 @@
+.about-bottom {
+    margin: 0;
+    padding: 0;
+    
+    &__heading {
+        margin-top: 175px;
+        margin-bottom: 75px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        text-align: center;
+        line-height: 28px;
+        color: #424242;
+    }
+    
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item--st {
+        min-height: 295px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 10px #F0F0F0;
+        margin-right: 29px;
+        padding: 0 15px 12px 31px;
+        background-image: url(./../../images/st1400.png);
+        background-repeat: no-repeat;
+        background-position: bottom 20px right 20px;
+        box-sizing: cover;
+        
+        &__heading {
+            @include about-bottom__heading;
+            
+        }
+        
+        &__text {
+            @include about-bottom__text;
+            
+        }
+    }
+    
+    &__item--nd {
+        margin: 0;
+        padding: 0;
+        margin-right: 31px;
+        padding: 40px 2px 70px 31px;
+        background: #B7ECB1;
+        box-shadow: 0px 10px 10px #F0F0F0;
+        background-image: url(./../../images/nd1400.png);
+        background-repeat: no-repeat;
+        background-position: top 20px right 20px;
+        box-sizing: cover;
+        
+        &__heading {
+            margin: 0;
+            @include about-bottom__heading;
+        }
+        
+        &__text {
+            @include about-bottom__text;
+        }
+        
+    }
+    
+    &__item--rd {
+        background: #FFFFFF;
+        box-shadow: 0px 10px 10px #F0F0F0;
+        padding: 0 18px 28px 32px;
+        background-image: url(./../../images/rd1400.png);
+        background-repeat: no-repeat;
+        background-position: bottom 20px right 20px;
+        box-sizing: cover;
+        
+        &__heading {
+            margin-bottom: 14px;
+            @include about-bottom__heading;
+            
+        }
+        
+        &__text {
+            @include about-bottom__text;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-bottom {
+        
+        &__heading {
+            font-size: 30px;
+            line-height: 28px;
+        }
+        
+        &__item--st {
+            background-image: url(./../../images/st1000.png);
+            background-repeat: no-repeat;
+            background-position: bottom 20px right 20px;
+            box-sizing: cover;
+            min-height: 250px;
+            padding: 25px 4px 11px 24px;
+            
+            &__heading {
+                @include about-bottom__heading1000;
+                
+            }
+            
+            &__text {
+                @include about-bottom__text1000;
+            }
+        }
+        
+        &__item--nd {
+            padding: 45px 3px 54px 25px;
+            background-image: url(./../../images/nd1000.png);
+            background-repeat: no-repeat;
+            background-position: top 20px right 20px;
+            box-sizing: cover;
+            
+            &__heading {
+                @include about-bottom__heading1000;
+                
+            }
+            
+            &__text {
+                @include about-bottom__text1000;
+            }
+        }
+        &__item--rd {
+            padding: 27px 7px 41px 25px;
+            background-image: url(./../../images/rd1000.png);
+            background-repeat: no-repeat;
+            background-position: bottom 20px right 20px;
+            box-sizing: cover;
+            
+            &__heading {
+                @include about-bottom__heading1000;
+                
+            }
+            
+            &__text {
+                @include about-bottom__text1000;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .about-bottom {
+        &___heading {
+            font-size: 25px;
+            line-height: 28px;
+        }
+        
+        &__list {
+            display: inline-block;
+        }
+        
+        &__item--st {
+            max-width: 642px;
+            min-height: 142px;
+            background-image: url(./../../images/st768.png);
+            background-position: 0 10px ;
+            padding: 15px 0 0 221px;
+            margin: 0;
+            margin-bottom: 32px;
+            &__heading {
+                @include about-bottom__heading768;
+            }
+            
+            &__text {
+                @include about-bottom__text768;
+            }
+            
+        }
+        
+        &__item--nd {
+            max-width: 642px;
+            max-height: 142px;
+            padding: 15px 9px 40px 222px;
+            background-image: url(./../../images/nd768.png);
+            background-repeat: no-repeat;
+            background-position: 0 10px ;
+            box-sizing: cover;
+            margin-bottom: 30px;
+            &__heading {
+                @include about-bottom__heading768;
+            }
+            
+            &__text {
+                @include about-bottom__text768;
+            }
+            
+        }
+        
+        &__item--rd {
+            max-width: 642px;
+            min-height: 142px;
+            background-image: url(./../../images/st768.png);
+            background-repeat: no-repeat;
+            background-position: 0 10px ;
+            box-sizing: cover;
+            padding: 15px 0 0 221px;
+            &__heading {
+                @include about-bottom__heading768;
+            }
+            
+            &__text {
+                @include about-bottom__text768;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .about-bottom {
+        &__heading {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        
+        &__item--st {
+            padding: 15px 1px 14px 106px;
+            @include about-bottom__width480;
+            background-image: url(./../../images/st480.png);
+            background-position: 10px 70px ;
+            
+            &__heading {
+                @include about-bottom__heading480;
+            }
+            
+            &__text {
+                @include about-bottom__text480;
+            }
+            
+        }
+        
+        &__item--nd {
+            padding: 25px 16px 43px 107px;
+            @include about-bottom__width480;
+            background-image: url(./../../images/nd480.png);
+            background-position: 10px 50px ;
+            
+            
+            &__heading {
+                @include about-bottom__heading480;
+            }
+            
+            &__text {
+                @include about-bottom__text480;
+            }
+            
+        }
+        
+        &__item--rd {
+            padding: 25px 21px 59px 106px;
+            @include about-bottom__width480;
+            background-image: url(./../../images/rd480.png);
+            background-position: 10px 70px ;
+            
+            &__heading {
+                @include about-bottom__heading480;
+            }
+            
+            &__text {
+                @include about-bottom__text480;
+            }
+            
+        }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .about-bottom {
+        
+        &__heading {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__item--st {
+            @include about-bottom__width320;
+            padding: 34px 1px 31px 20px;
+            background-image: url(./../../images/st320.png);
+            background-position: top 25px center;
+
+            &__heading {
+                @include about-bottom__heading320;
+            }
+
+            &__text {
+                @include about-bottom__text320;
+
+            }
+        }
+
+        &__item--nd {
+            @include about-bottom__width320;
+            padding: 40px 37px 41px 20px;
+            background-image: url(./../../images/nd320.png);
+            background-position: top 15px center;
+
+            &__heading {
+                @include about-bottom__heading320;
+            }
+
+            &__text {
+                @include about-bottom__text320;
+
+            }
+        }
+
+
+        &__item--rd {
+            margin-bottom: 80px;
+            @include about-bottom__width320;
+            padding: 46px 19px 43px 18px;
+            background-image: url(./../../images/rd320.png);
+            background-position: top 35px center;
+
+            &__heading {
+                @include about-bottom__heading320;
+            }
+
+            &__text {
+                @include about-bottom__text320;
+
+            }
+        }
+    }
+}
