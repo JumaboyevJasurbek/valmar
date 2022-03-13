@@ -3,7 +3,7 @@
     padding: 0;
     &__section {
         display: flex;
-        maax-width: 900px;
+        max-width: 900px;
     }
     
     &__heading {
@@ -19,9 +19,7 @@
     }
     
     &__img {
-        max-width: 600px;
         margin-top: 56px;
-        margin-right: 50px;
     }
     
     &__bottom-section {
@@ -32,7 +30,6 @@
     }
     
     &__text {
-        max-width: 997px;
         margin: 0 auto;
         font-family: 'Montserrat';
         font-style: normal;
@@ -47,7 +44,6 @@
 @media only screen and (max-width: 1000px) {
     .hero {
         &__heading {
-            margin-right: 40px;
             font-weight: 600;
             font-size: 32px;
             line-height: 46px

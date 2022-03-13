@@ -117,12 +117,16 @@
         }
 
         &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 360px;
+            margin: 0 auto;
         }
 
-        &__item2 {
-            display: block;
-            
-
+        &__item {
+            width: 125px;
+            margin: 0 auto;
         }
+
     }
 }
