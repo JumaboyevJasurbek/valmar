@@ -1,0 +1,225 @@
+.message {
+    padding: 0;
+    margin-bottom: 140px;
+    &__heading {
+        padding-top: 177px;
+        padding-bottom: 75px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;
+        text-align: center;
+        color: #424242;
+    }
+    
+    &__section {
+        background: #ECF9EB;
+        max-height: 970px;
+        overflow-y: scroll;
+        
+    }
+    
+    &__list {
+        position: relative;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-top: 70px;
+    }
+    
+    &__item {
+        padding-left: 84px;
+        display: flex;
+        justify-content: space-between;
+        
+        &-name {
+            margin: 0;
+            padding: 0;
+            min-width: 192px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #424242;
+        }
+        
+        
+        &__span-name {
+            display: inline-block;
+            margin-top: 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            color: #424242;
+            
+            opacity: 0.8;
+        }
+        
+        &-text {
+            margin: 0;
+            padding: 0;
+            margin-right: 25px;
+            margin-left: 111px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1C1E23;
+            opacity: 0.8;
+        }
+    }
+    
+    &__button {
+        position: sticky;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 21px 65px;
+        margin-top: 60px;
+        margin-bottom: 52px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        background: #55A630;
+        color: #FFFFFF;
+        border: none;
+        cursor: pointer;
+        bottom: 30px;
+        left: 400px;
+        
+        
+        &:hover {
+            color: #55A630;
+            background: #FFFFFF;
+            transition: all 0.3s ease;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .message {
+        &__heading {
+            font-size: 35px;
+            line-height: 28px;
+        }
+        
+        &__section {
+            max-height: 645px;
+            
+        }
+        
+        &__list {
+            gap: 52px;
+            padding-top: 70px;
+        }
+        
+        &__item {
+            padding-left: 83px;
+            
+            &-name {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            
+            &__span-name {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            
+            &-text {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        
+        &__button {
+            padding: 19px 47px;
+            font-size: 18px;
+            line-height: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .message {
+        
+        &__heading {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 17px;
+        }
+        
+        &__item {
+            flex-direction: column-reverse;
+            
+            &-name {
+                margin-left: 420px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                max-width: 30px;
+            }
+        }
+        
+        
+        &__button {
+            margin-right: 270px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .message {
+        
+        &__section {
+        }
+        
+        &__list {
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        &__item {
+            max-width: 360px;
+            margin: 0;
+            padding: 0;
+            
+            &-text {
+                max-width: 326px;
+                margin: 0;
+                margin-left: 17px;
+                font-size: 15px;
+                line-height: 23px;
+            }
+            &-name {
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 26px;
+                margin-left: 130px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                max-width: 30px;
+            }
+        }
+        
+        &__button {
+            margin-right: 50px;
+        }
+    }
+}

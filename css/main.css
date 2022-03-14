@@ -1635,4 +1635,230 @@ img {
     width: 180px;
   }
 }
+
+.message {
+  padding: 0;
+  margin-bottom: 140px;
+}
+
+.message__heading {
+  padding-top: 177px;
+  padding-bottom: 75px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 28px;
+  text-align: center;
+  color: #424242;
+}
+
+.message__section {
+  background: #ECF9EB;
+  max-height: 970px;
+  overflow-y: scroll;
+}
+
+.message__list {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+  padding-top: 70px;
+}
+
+.message__item {
+  padding-left: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message__item-name {
+  margin: 0;
+  padding: 0;
+  min-width: 192px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+}
+
+.message__item__span-name {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+  opacity: 0.8;
+}
+
+.message__item-text {
+  margin: 0;
+  padding: 0;
+  margin-right: 25px;
+  margin-left: 111px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1C1E23;
+  opacity: 0.8;
+}
+
+.message__button {
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 21px 65px;
+  margin-top: 60px;
+  margin-bottom: 52px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  background: #55A630;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  bottom: 30px;
+  left: 400px;
+}
+
+.message__button:hover {
+  color: #55A630;
+  background: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  .message__heading {
+    font-size: 35px;
+    line-height: 28px;
+  }
+  .message__section {
+    max-height: 645px;
+  }
+  .message__list {
+    gap: 52px;
+    padding-top: 70px;
+  }
+  .message__item {
+    padding-left: 83px;
+  }
+  .message__item-name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .message__item__span-name {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .message__item-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .message__button {
+    padding: 19px 47px;
+    font-size: 18px;
+    line-height: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .message__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 17px;
+  }
+  .message__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .message__item-name {
+    margin-left: 420px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 30px;
+  }
+  .message__button {
+    margin-right: 270px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .message__list {
+    margin: 0;
+    padding: 0;
+  }
+  .message__item {
+    max-width: 360px;
+    margin: 0;
+    padding: 0;
+  }
+  .message__item-text {
+    max-width: 326px;
+    margin: 0;
+    margin-left: 17px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .message__item-name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    margin-left: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 30px;
+  }
+  .message__button {
+    margin-right: 50px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
