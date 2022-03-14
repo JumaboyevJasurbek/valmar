@@ -1576,9 +1576,6 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
-  .doctors__section {
-    max-width: 360px;
-  }
   .doctors__heading {
     padding: 0;
     display: -webkit-box;
@@ -1593,20 +1590,17 @@ img {
     text-align: center;
   }
   .doctors__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    max-width: 360px;
   }
-  .doctors__item {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .doctors__doctors__img {
-    width: 158px;
+  .doctors__img {
+    max-width: 158px;
     height: auto;
+  }
+  .doctors__name {
+    max-width: 158px;
+  }
+  .doctors__work {
+    max-width: 158px;
   }
 }
 
@@ -1620,8 +1614,23 @@ img {
     font-size: 20px;
     line-height: 28px;
   }
+  .doctors__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .doctors__list {
     max-width: 180px;
+  }
+  .doctors__img {
+    max-width: 280px;
   }
   .doctors__name {
     margin: 10px auto;
@@ -1823,10 +1832,10 @@ img {
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .message__list {
-    margin: 0;
-    padding: 0;
+@media only screen and (max-width: 480px) {
+  .message__heading {
+    font-size: 20px;
+    line-height: 15px;
   }
   .message__item {
     max-width: 360px;
@@ -1859,6 +1868,51 @@ img {
   }
   .message__button {
     margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .message__heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .message__list {
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 26px;
+  }
+  .message__item {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .message__item-text {
+    max-width: 254px;
+    margin: 0;
+    margin-left: 17px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .message__item-name {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    margin-left: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 30px;
+  }
+  .message__button {
+    margin-right: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

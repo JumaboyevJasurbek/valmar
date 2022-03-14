@@ -59,12 +59,12 @@
         max-width: 694px;
         margin: 0 auto;
         
-
+        
         &__img {
             max-width: 285px;
             height: 380px;
         }
-
+        
         &__heading {
             font-size: 30px;
             line-height: 28px;
@@ -74,11 +74,11 @@
 
 @media only screen and (max-width: 768px) {
     .doctors {
-
+        
         &__list {
             width: 643px;
         }
-
+        
         &__item {
             max-width: 285px;
         }
@@ -88,10 +88,9 @@
 
 @media only screen and (max-width: 480px) {
     .doctors {
-
+        
         &__section {
-            max-width: 360px;
-
+            
         }
         
         &__heading {
@@ -104,17 +103,23 @@
         
         
         &__list {
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        &__item {
-            align-items: flex-start;
+            max-width: 360px;
         }
         
-        &__doctors__img {
-            width: 158px;
+        &__item {
+        }
+        
+        &__img {
+            max-width: 158px;
             height: auto;
+        }
+        
+        &__name {
+            max-width: 158px;
+        }
+        
+        &__work {
+            max-width: 158px;
         }
     }
 }
@@ -129,16 +134,27 @@
             font-size: 20px;
             line-height: 28px;
         }
-
+        
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
         &__list {
             max-width: 180px;
         }
-
+        
+        &__img {
+            max-width: 280px;
+        }
+        
+        
         &__name {
             margin: 10px auto;
-
+            
         }
-
+        
         &__item {
             text-align: center;
             margin: 0 auto;

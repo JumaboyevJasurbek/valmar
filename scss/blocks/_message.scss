@@ -182,16 +182,12 @@
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
     .message {
-        
-        &__section {
-        }
-        
-        &__list {
-            margin: 0;
-            padding: 0;
-            
+
+        &__heading {
+            font-size: 20px;
+            line-height: 15px;
         }
         
         &__item {
@@ -221,5 +217,50 @@
         &__button {
             margin-right: 50px;
         }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .message {
+        &__heading {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__list {
+            padding-top: 28px;
+            padding-left: 20px;
+            padding-right: 26px;
+        }
+
+        &__item {
+            max-width: 300px;
+            margin: 0;
+            padding: 0;
+            
+            &-text {
+                max-width: 254px;
+                margin: 0;
+                margin-left: 17px;
+                font-size: 15px;
+                line-height: 23px;
+            }
+            &-name {
+                margin-top: 5px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 26px;
+                margin-left: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                max-width: 30px;
+            }
+        }
+        
+        &__button {
+            margin-right: 40px;
+        }
+
     }
 }
